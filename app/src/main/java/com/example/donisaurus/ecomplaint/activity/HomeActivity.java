@@ -42,7 +42,7 @@ import java.util.List;
  */
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, SwipeRefreshLayout.OnRefreshListener{
-
+    //tes
     private static final int GALLERY_PICTURE = 1;
     private static final int CAMERA_REQUEST = 0;
     private Button btnUpload;
