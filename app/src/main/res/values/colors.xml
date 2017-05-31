@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#e5e5e5</color>
+    <color name="colorAccent">#ff5722</color>
+    <color name="colorTitle">#ed6d17</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="backgroundLogin">#f4f5f7</color>
+
+    <!-- Button Style -->
+    <color name="button_ok">#b7ada7</color>
+    <color name="button_regis">#ed6d17</color>
+</resources>

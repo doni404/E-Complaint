@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_news"
+        android:icon="@mipmap/ic_new_releases_black_24dp"
+        android:title="Terbaru"/>
+
+    <item android:id="@+id/nav_populer"
+        android:icon="@mipmap/ic_star_border_black_24dp"
+        android:title="Populer"/>
+
+    <!--<item android:id="@+id/nav_mix"-->
+        <!--android:icon="@mipmap/ic_shuffle_black_18dp"-->
+        <!--android:title="Acak"/>-->
+
+    <item android:id="@+id/nav_maps"
+        android:icon="@mipmap/ic_map_black_24dp"
+        android:title="Map"/>
+
+    <item android:id="@+id/nav_logout"
+        android:icon="@mipmap/ic_exit_to_app_black_24dp"
+        android:title="Keluar"/>
+
+</menu>

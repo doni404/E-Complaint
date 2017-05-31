@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:textColor="@color/button_ok"
+            android:hint="Phone Number"
+            android:inputType="number"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/phone_number"
+        android:text="Dibutuhkan verifikasi nomor telepon untuk membuat akun TESS baru. Dengan menekan tombol NEXT berarti Anda telah menyetujui Syarat dan Ketentuan yang berlaku."/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:textColor="@color/colorText"
+        android:text="Next"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

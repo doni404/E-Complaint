@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/relativeLayout"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.donisaurus.ecomplaint.activity.PickLocationActivity"
+    tools:showIn="@layout/layout_pick_location">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/barLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.mapbox.mapboxsdk.views.MapView
+        xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_location_on_black_24dp" />
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:id="@+id/tl_lokasi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/loc_id"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:src="@mipmap/ic_location_on_black_24dp"
+                android:tint="#777777" />
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/loc_id"
+                android:layout_toRightOf="@+id/loc_id"
+                android:gravity="left|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Pilih Lokasi ini"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/loc_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambahkan Lokasi"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

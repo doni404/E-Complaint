@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/etCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="4"
+            android:textAlignment="center"
+            android:textSize="26dp"
+            android:textColor="@color/button_regis"
+            android:text="5914"
+            android:inputType="number"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvVerifCode"
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCode"
+        android:textAlignment="center"
+        android:text="Masukkan kode verifikasi yang dikirim melalui SMS ke nomor telepon yang Anda masukan sebelumnya. Apabila Kode Verifikasi tidak terkirim silahkan tekan\n Kirim ulang kode"/>
+
+    <Button
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:textColor="@color/colorText"
+        android:background="@color/button_ok"
+        android:text="Next"/>
+
+</RelativeLayout>

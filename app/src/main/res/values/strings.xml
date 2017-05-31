@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">EComplaint</string>
+    <string name="toolbar_name">E-Complaint System</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!-- Registration Form -->
+    <string-array name="sp_gender">
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <!-- Category -->
+    <string-array name="categoryList">
+        <item>Infrastruktur Kota</item>
+        <item>Pelayanan Publik</item>
+        <item>Kebersihan Lingkungan</item>
+    </string-array>
+
+    <!-- Mapbox token -->
+    <string name="mapbox_token">pk.eyJ1IjoiZG9uaXNhdXJ1cyIsImEiOiJjaXduOGl2bnUwMDdtMnRxbXYxaWZ0YWVpIn0.Q9ITBH5mrRBwsIMeRqeqSw</string>
+</resources>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardElevation="5sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Content 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/activity_vertical_margin">
+
+                        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                            <!--android:id="@+id/mAvatar"-->
+                            <!--android:layout_width="35dp"-->
+                            <!--android:layout_height="35dp"-->
+                            <!--android:layout_gravity="center_vertical"-->
+                            <!--android:src="@drawable/profile"-->
+                            <!--app:civ_border_width="1dp"-->
+                            <!--app:civ_border_color="#FF000000"/>-->
+
+                        <TextView
+                            android:id="@+id/mUsername"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="16dp"
+                            android:text="Doni Putra"/>
+
+                        <TextView
+                            android:id="@+id/mTlTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|end"
+                            android:layout_weight="1"
+                            android:textSize="13dp"
+                            android:text="Wed, 16 Nov 2016"/>
+
+                        <!--<ImageView-->
+                            <!--android:src="@mipmap/ic_more_vert_black_24dp"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center_vertical"/>-->
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp">
+
+                        <ImageView
+                            android:id="@+id/mTlImage"
+                            android:src="@drawable/gb1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <RelativeLayout
+                            android:id="@+id/mTlMap"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#26000044">
+
+                            <ImageView
+                                android:id="@+id/mLocId"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginStart="15dp"
+                                android:src="@drawable/ic_mapbox" />
+
+                            <TextView
+                                android:id="@+id/mLocText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_toEndOf="@+id/mLocId"
+                                android:layout_toRightOf="@+id/mLocId"
+                                android:gravity="left|center"
+                                android:padding="15dp"
+                                android:text="Unknown"
+                                android:textColor="#FFFFFF"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!--<TextView-->
+
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:textStyle="bold"-->
+                                <!--android:textColor="#666666"-->
+                                <!--android:text="Johndoe"/>-->
+
+                            <TextView
+                                android:id="@+id/mTlDisc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kenapa kok begini yak jalannya ?"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/homeToolbar">
+
+                        <View android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/toolbar_dropshadow"/>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin">
+
+                        <ImageView
+                            android:id="@+id/mLikeIc"
+                            android:layout_weight="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/ic_star_border_black_24dp"/>
+
+                        <TextView
+                            android:id="@+id/mLikeCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="12 Orang"
+                            android:textColor="@color/button_regis"/>
+
+                        <ImageView
+                            android:id="@+id/mCommentIc"
+                            android:layout_weight="0"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/ic_message_black_24dp"/>
+
+                        <TextView
+                            android:id="@+id/mCommentCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:text="12 Orang"
+                            android:textColor="@color/button_regis"/>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/homeToolbar">
+
+                        <View android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@drawable/toolbar_dropshadow"/>
+
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- End of Content 1 -->
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
